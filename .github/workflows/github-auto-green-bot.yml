@@ -18,7 +18,7 @@ jobs:
         run: |
           git config --local user.email "xkrivzooh@gmail.com"
           git config --local user.name "xkrivzooh"
-          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.AUTO_GREEN_BOT }}@github.com/${{ github.repository }}
           git pull --rebase
           date +"%Y-%m-%d %H:%M:%S.%N" > useless.txt
           git commit -am "a commit every day, keep your girlfriend far away"
